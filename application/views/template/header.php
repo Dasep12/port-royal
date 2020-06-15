@@ -5,8 +5,8 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" href="<?= base_url() ?>assets/img/PORT-ROYAL.png">
-    <link rel="shortcut icon" href="<?= base_url() ?>assets/img/PORT-ROYAL.png">
+    <link rel="apple-touch-icon" href="<?= base_url() ?>assets/img/logo.jpg">
+    <link rel="shortcut icon" href="<?= base_url() ?>assets/img/logo.jpg">
 	<title>PORT-ROYAL</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="<?= base_url() ?>/assets/css/bootstrap.css">

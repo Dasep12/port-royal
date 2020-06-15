@@ -8,7 +8,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="./"><img src="<?= base_url() ?>assets/img/PORT-ROYAL.png" alt="Logo">
+                <a class="navbar-brand" href="./"><img src="<?= base_url() ?>assets/img/sepatu.jpg" alt="Logo">
                 <br><br></a>
             </div>
 

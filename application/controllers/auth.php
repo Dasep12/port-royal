@@ -28,7 +28,7 @@
 
  		if ($this->form_validation->run() == FALSE ){
  			$data['logo']			= $this->model_logo->getLogo();
-		 $data['gambar']		= $this->model_logo->getigFeed();
+		 	$data['gambar']		= $this->model_logo->getigFeed();
  			$this->load->view('template/header',$data);
 	 		$this->load->view('template/banner');
 	 		$this->load->view('login');
