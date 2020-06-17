@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 13 Okt 2019 pada 12.25
--- Versi server: 10.1.37-MariaDB
--- Versi PHP: 7.3.0
+-- Waktu pembuatan: 17 Jun 2020 pada 16.29
+-- Versi server: 10.4.11-MariaDB
+-- Versi PHP: 7.2.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -21,6 +20,24 @@ SET time_zone = "+00:00";
 --
 -- Database: `toko_sepatu`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `about`
+--
+
+CREATE TABLE `about` (
+  `id` int(11) NOT NULL,
+  `about` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `about`
+--
+
+INSERT INTO `about` (`id`, `about`) VALUES
+(1, 'ini adalah perusahaan tempat jual beli sepatu ternama ');
 
 -- --------------------------------------------------------
 
@@ -86,7 +103,7 @@ CREATE TABLE `logo` (
 --
 
 INSERT INTO `logo` (`id`, `logo`) VALUES
-(1, 'port-royal.png');
+(1, 'logo1.png');
 
 -- --------------------------------------------------------
 
@@ -171,7 +188,8 @@ CREATE TABLE `tb_invoice` (
 --
 
 INSERT INTO `tb_invoice` (`id`, `first_name`, `last_name`, `no_telp`, `email`, `alamat`, `kota`, `keterangan`, `tgl_pesan`, `batas_bayar`, `kode_pos`) VALUES
-(3, 'Rika', 'Rinjani', '083821619460', 'Rika@wahyu.com', 'Jakarta Selatan', 'Jakarta Selatan', '', '2019-10-13 10:14:14', '2019-10-14 10:14:14', '4563');
+(3, 'Rika', 'Rinjani', '083821619460', 'Rika@wahyu.com', 'Jakarta Selatan', 'Jakarta Selatan', '', '2019-10-13 10:14:14', '2019-10-14 10:14:14', '4563'),
+(4, 'dasep', 'WAHYUNI', '12', 'anithaanggraeni26@gmail.com', '12', '12', '12', '2020-06-17 09:28:26', '2020-06-18 09:28:26', '45680');
 
 -- --------------------------------------------------------
 
@@ -196,7 +214,8 @@ CREATE TABLE `tb_pesanan` (
 INSERT INTO `tb_pesanan` (`id`, `id_brg`, `id_invoice`, `nama_produk`, `jumlah`, `harga`, `merk`) VALUES
 (2, '13', '3', 'Adidas', '1', '650000', ''),
 (3, '9', '3', 'Adidas', '1', '224000', ''),
-(4, '11', '3', 'Vans', '1', '246400', '');
+(4, '11', '3', 'Vans', '1', '246400', ''),
+(5, '12', '4', 'Salvy', '1', '171000', '');
 
 --
 -- Trigger `tb_pesanan`
@@ -239,7 +258,7 @@ INSERT INTO `tb_produk` (`id`, `nama_produk`, `merk`, `ukuran`, `harga`, `stock`
 (6, 'Sepatu Kantor', 'Sneakers', 'All Size', '150000', '20', 'Sepatu bisa di pakai di mana saja dan kapan saja', 'ds.jpg', '10', '15000', 'BRG-1', '', '135000'),
 (9, 'Sepatu Santai', 'Adidas', 'All Size', '280000', '24', '', 'index.jpg', '20', '56000', 'BRG-3', '', '224000'),
 (11, 'Sepatu Olahraga', 'Vans', 'All Size', '280000', '13', '', '112.jpg', '12', '33600', 'BRG-5', '', '246400'),
-(12, 'Sepatu Santai', 'Salvy', 'All Size', '190000', '45', '', 'gfg.jpg', '10', '19000', 'BRG-4', '', '171000'),
+(12, 'Sepatu Santai', 'Salvy', 'All Size', '190000', '44', '', 'gfg.jpg', '10', '19000', 'BRG-4', '', '171000'),
 (13, 'Sepatu Olahraga', 'Adidas', 'All Size', '650000', '24', '', 'fdggrtr.jpg', '0', '0', 'BRG-7', '', '650000'),
 (14, 'Sepatu Santai', 'Vans', 'All Size', '250000', '14', '', 'bvfbfg.jpg', '12', '30000', 'BRG-8', '', '220000'),
 (15, 'Sepatu Santai', 'Vans', 'All Size', '350000', '25', '', 'ghhhh.jpg', '5', '17500', 'BRG-9', '', '332500'),
@@ -286,11 +305,18 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `nama`, `email`, `username`, `password`, `role_id`) VALUES
 (1, 'Dasep', 'depiyawan13@gmail.com', 'Dasep12', '123', 2),
-(2, 'admin', 'depiyawan13@gmail.com', 'Dasep12', '123', 1);
+(2, 'admin', 'depiyawan13@gmail.com', 'Dasep12', '123', 1),
+(3, 'Sinta', 'depiyawandasep13@gmail.com', 'Sinta', '123', 1);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indeks untuk tabel `about`
+--
+ALTER TABLE `about`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indeks untuk tabel `admin`
@@ -384,13 +410,13 @@ ALTER TABLE `stock`
 -- AUTO_INCREMENT untuk tabel `tb_invoice`
 --
 ALTER TABLE `tb_invoice`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_pesanan`
 --
 ALTER TABLE `tb_pesanan`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_produk`
@@ -402,7 +428,7 @@ ALTER TABLE `tb_produk`
 -- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
