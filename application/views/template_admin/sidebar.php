@@ -8,7 +8,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="./"><img src="<?= base_url() ?>assets/img/sepatu.jpg" alt="Logo">
+                <a class="navbar-brand" href="./"><img src="<?= base_url() ?>assets/img/logo1.png" alt="Logo">
                 <br><br></a>
             </div>
 
@@ -34,6 +34,9 @@
                             <li><i class="ti ti-palette"></i><a href="<?= base_url('admin/setting/viewLogo/') ?>">Edit Logo</a></li>
                             <li><i class="ti ti-key"></i><a href="<?= base_url('admin/setting/Changepass/') ?>">Ganti Password</a></li>
                         </ul>
+                    </li>
+                    <li>
+                        <a href="<?= base_url('admin/about') ?>"> <i class="menu-icon fa fa-th"></i>Tentang </a>
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->

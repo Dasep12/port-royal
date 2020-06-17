@@ -10,7 +10,7 @@
  	{
 
  		//config 
- 		$config['base_url'] 	= 'http://localhost/port-royal/dashboard/index/';
+ 		$config['base_url'] 	= 'http://localhost/findyourshoes/dashboard/index/';
  		$config['total_rows']	= $this->model_barang->countSepatu();
 
  		//limit yang ditampilkan per halaman

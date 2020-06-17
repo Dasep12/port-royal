@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" href="<?= base_url() ?>assets/img/logo.jpg">
     <link rel="shortcut icon" href="<?= base_url() ?>assets/img/logo.jpg">
-	<title>PORT-ROYAL</title>
+	<title>FIND YOUR SHOES</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="<?= base_url() ?>/assets/css/bootstrap.css">
 	<link rel="stylesheet" href="<?= base_url() ?>/assets/vendors/linericon/style.css">

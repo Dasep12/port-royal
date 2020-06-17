@@ -1,4 +1,4 @@
-
+<?php $tentang = $this->db->get("about")->row(); ?>
 	<!--================ start footer Area  =================-->
 	<center>
 	<footer class="footer-area section_gap">
@@ -8,7 +8,7 @@
 				<div class="col-lg-3  col-md-6 col-sm-6 ml-5">
 					<div class="single-footer-widget">
 						<h6 class="footer_title">Tentang Kami</h6>
-						<p>Kami adalah sebuah toko sepatu kecil yang beralamat di Cimahi , dan moto kami adalah memuaskan pelanggan </p>
+						<p><?= $tentang->about ?> </p>
 					</div>
 				</div>
 			

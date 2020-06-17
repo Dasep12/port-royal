@@ -10,8 +10,8 @@
                     <div class="contact_info">
                         <div class="info_item">
                             <i class="lnr lnr-home"></i>
-                            <h6>Cimahi, Kota Cimahi</h6>
-                            <p>Port Royal Daily</p>
+                            <h6>Depok , </h6>
+                            <p>FIND YOUR SHOES</p>
                         </div>
                         <div class="info_item">
                             <i class="lnr lnr-phone-handset"></i>
@@ -23,7 +23,7 @@
                         <div class="info_item">
                             <i class="lnr lnr-envelope"></i>
                             <h6>
-                                <a href="#">support@port-royaldaily.com</a>
+                                <a href="#">support@find-yourshoes.com</a>
                             </h6>
                             <p>Send us your query anytime!</p>
                         </div>

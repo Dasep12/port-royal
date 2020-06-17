@@ -33,7 +33,7 @@
             <div class="login-content">
                 <div class="login-logo" style="height: 100px;">
                     
-                        <img class="align-content" style="margin-top: -55px;" src="<?= base_url() ?>assets/img/PORT-ROYAL.png" alt="">
+                        <img class="align-content" style="" src="<?= base_url() ?>assets/img/logo1.png" alt="">
                     
                 </div>
                 <div class="login-form">
